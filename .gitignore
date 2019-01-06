@@ -2,8 +2,9 @@
 */App/*
 
 # Expection of files to be ignored
-!*/App/Dockerfile
-!*/App/logs.txt
+!ex5/App/Dockerfile
+!ex6/App/Dockerfile
+!ex6/App/logs.txt
 
 # Backup Files
 *.*~

@@ -29,8 +29,11 @@ CMD ["npm", "start"]
 # Build the image
 # docker build -t nodesback .
 
-# run the image with a file(logs) shared between container and host at the current working directory
-# docker run -v $(pwd):/logs.txt -d --rm -it --name sixthex -p 8000:8000 nodesback
+# Run the image with a file(logs) shared between container inside the
+# App dir. Note that the logs.txt on the host file needs to exist
+# (touch logs.txt) otherwise docker creates it as a directory
+
+#  docker run -v $(pwd)/logs.txt:/App/logs.txt -d --rm -it  --name sixthex -p 8000:8000 nodesback
 
 # Log into the container:
 # docker exec -it sixthex bash

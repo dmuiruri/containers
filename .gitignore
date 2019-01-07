@@ -1,5 +1,6 @@
 # Ignore the app files
-*/App/*
+ex5/App/*
+ex6/App/*
 
 # Expection of files to be ignored
 !ex5/App/Dockerfile

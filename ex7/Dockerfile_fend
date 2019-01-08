@@ -21,7 +21,7 @@ COPY . .
 
 # The port to serve the app(frontend), can be bound to the host on the
 # same or different port. This allows us to access the app from
-# http://localhost/<port>
+# http://localhost:5000
 EXPOSE 5000
 
 # Start the app at the launch of the container

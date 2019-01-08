@@ -12,12 +12,12 @@ These configurations are passed to the docker run command.
 ### Backend
 Run the backend and bind the container's port 8000 to the host's port
 8000 allowing for access the container through the
-http://localhost/8000. The environment variable `FRONT_URL` allows the
+http://localhost:8000. The environment variable `FRONT_URL` allows the
 backend to process Cross Origin Requests `(CORS)` from the localhost's
 port 5000. When properly configured, the parameter
 `Access-Control-Allow-Origin` can be observed to be set to
-'http://localhost:5000` from the network tab in the browser's
-developer console.
+http://localhost:5000 from the network tab in the browser's developer
+console.
 
 `docker run -v $(pwd)/logs.txt:/App/logs.txt -d --rm -it --name sixthex -p 8000:8000 -e FRONT_URL="http://localhost:5000" nodesback`
 

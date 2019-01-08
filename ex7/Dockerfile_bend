@@ -32,7 +32,7 @@ CMD ["npm", "start"]
 # Run the image with a file(logs.txt) shared between container and the
 # host Note that the logs.txt on the host file needs to exist (touch
 # logs.txt) otherwise docker creates it as a directory. The
-# application can be accessed via http://localhost/8000. FRONT_URL is
+# application can be accessed via http://localhost:8000. FRONT_URL is
 # a Cross Origin Request setting that tells the backend to allow
 # access requests coming from locahost's port 5000
 

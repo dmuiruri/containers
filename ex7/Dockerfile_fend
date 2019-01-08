@@ -28,5 +28,5 @@ EXPOSE 5000
 CMD ["npm", "start"]
 
 
-# The app can be accessed via, (hostport:containerport)
-# docker run -d --rm -it --name fifthex -p 5000:5000 nodes
+# The app can be accessed via, (http://localhost/5000)
+# docker run -d --rm -it --name fifthex -p 5000:5000 -e API_URL="http://localhost:8000" nodes

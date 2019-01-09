@@ -1,8 +1,9 @@
 # React and docker 
 
 This is a React app that implements a simple speedtest game, the main
-goal is to setup a docker container with the relevant dependencies to
-support running the app from a docker container.
+goal is to setup a docker container(see `Dockerfile`) with the
+relevant dependencies to support running the app from a docker
+container.
 
 ### Building the image
 Run the command from the same directory containing the Dockerfile

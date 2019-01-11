@@ -12,7 +12,7 @@ command
 
 In order make use of compose in an application,
 
-- A working `Dockerfile` (A Dockerfile defines an application
+- A working `Dockerfile` (A Dockerfile defines an application's
   environment) is required
 
 - Create a `docker-compose.yml` file that defines the services that
@@ -28,8 +28,9 @@ syntax.
 
 ## Running an application with compose
 
-In this section, an application with a frontend and backend in
-different containers is run using docker compose. The frontend and
-backend are contained in parts \ex1_5 and \ex1_6 respectively. The
-`build` instruction indicates where the Dockerfile used to build an
-image is located relative to the docker-compose file.
+In reference to the `YAML` in this repo, an application with frontend
+and backend services in different containers is run using docker
+compose. The frontend and backend are contained in parts \ex1_5 and
+\ex1_6 respectively. The `build` instruction indicates where the
+Dockerfile used to build an image is located relative to the
+docker-compose file.

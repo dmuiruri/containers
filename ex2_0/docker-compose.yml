@@ -20,6 +20,6 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ../ex6/logs.txt:/App/logs.txt
+      - ../ex1_6/logs.txt:/App/logs.txt
     environment:
       - FRONT_URL=http://localhost:5000

@@ -2,7 +2,7 @@ version: '3'
 services:
   frontend:
     build:
-      ../ex5/App/Dockerfile
+      ../ex1_5/App/Dockerfile
     container_name: nodesfrontend
     image: nodes
     command: npm start
@@ -13,7 +13,7 @@ services:
 
   backend:
     build:
-      ../ex6/App/Dockerfile
+      ../ex1_6/App/Dockerfile
     container_name: nodesbackend
     image: nodesback
     command: npm start

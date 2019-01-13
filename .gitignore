@@ -1,6 +1,9 @@
 # Ignore the app files
 ex5/App/*
 ex6/App/*
+ex24/ml-kurkkumopo-backend
+ex24/ml-kurkkumopo-frontend
+ex24/ml-kurkkumopo-training
 
 # Expection of files to be ignored
 !ex5/App/Dockerfile

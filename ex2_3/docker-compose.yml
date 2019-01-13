@@ -19,10 +19,11 @@ services:
 
   db:
     image: postgres
-    restart: always
+    restart: unless-stopped
+    container_name: db
     environment:
-      POSTGRES_USER: dmuiruri
-      POSRTGRES_PASSWORD: dmuiruri
+      POSTGRES_USER: usernamedm
+      POSRTGRES_PASSWORD: usernamedm
       POSTGRES_DB: dmdb
 
   backend:
@@ -39,7 +40,7 @@ services:
       - FRONT_URL=http://localhost:5000
       - REDIS=redis
       - REDIS_PORT=6379
-      - DB_USERNAME=dmuiruri
-      - DB_PASSWORD=dmuiruri
+      - DB_USERNAME=usernamedm
+      - DB_PASSWORD=usernamedm
       - DB_NAME=dmdb
       - DB_HOST=localhost

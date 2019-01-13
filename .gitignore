@@ -1,6 +1,8 @@
 # Ignore the app files
 ex5/App/*
 ex6/App/*
+
+# Ignore project files
 ex24/ml-kurkkumopo-backend
 ex24/ml-kurkkumopo-frontend
 ex24/ml-kurkkumopo-training

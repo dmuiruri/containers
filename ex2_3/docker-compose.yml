@@ -1,0 +1,45 @@
+version: '3'
+services:
+  frontend:
+    build:
+      ../ex1_5/App/Dockerfile
+    container_name: nodesfrontend
+    image: nodes
+    command: npm start
+    ports:
+      - 5000:5000
+    environment:
+      - API_URL=http://localhost:8000
+
+  redis:
+    image: redis
+    container_name: cache
+    expose:
+      - 6379
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: dmuiruri
+      POSRTGRES_PASSWORD: dmuiruri
+      POSTGRES_DB: dmdb
+
+  backend:
+    build:
+      ../ex1_6/App/Dockerfile
+    container_name: nodesbackend
+    image: nodesback
+    command: npm start
+    ports:
+      - 8000:8000
+    volumes:
+      - ../ex1_6/logs.txt:/App/logs.txt
+    environment:
+      - FRONT_URL=http://localhost:5000
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_USERNAME=dmuiruri
+      - DB_PASSWORD=dmuiruri
+      - DB_NAME=dmdb
+      - DB_HOST=localhost

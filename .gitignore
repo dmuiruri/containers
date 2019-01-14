@@ -3,9 +3,11 @@ ex5/App/*
 ex6/App/*
 
 # Ignore project files
-ex24/ml-kurkkumopo-backend
-ex24/ml-kurkkumopo-frontend
-ex24/ml-kurkkumopo-training
+ex2_4/ml-kurkkumopo-backend
+ex2_4/ml-kurkkumopo-frontend
+ex2_4/ml-kurkkumopo-training
+ex2_4/imgs
+ex2_4/model
 
 # Expection of files to be ignored
 !ex5/App/Dockerfile

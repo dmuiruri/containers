@@ -30,6 +30,9 @@ services:
     build:
       ../ex1_6/App/Dockerfile
     container_name: nodesbackend
+    depends_on:
+      - db
+      - redis
     image: nodesback
     command: npm start
     ports:

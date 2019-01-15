@@ -14,9 +14,9 @@ containers from the whoami image.
 
  `docker-compose up -d whoami=3`
 
-Each container will run on port 8000 which are mapped in random order
-at the host side. To check where each running container is mapped,
-compose's port command can be run as follows.
+Each container will run on its own port 8000 which is then mapped in
+random order at the host side. To check where each running container
+is mapped, compose's port command can be run as follows.
 
 `docker-compose port --index 1 whoami 8000`
 

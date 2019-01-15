@@ -9,6 +9,9 @@ ex2_4/ml-kurkkumopo-training
 ex2_4/imgs
 ex2_4/model
 
+# Ignore sql file
+ex2_5/wp/dump.sql
+
 # Expection of files to be ignored
 !ex5/App/Dockerfile
 !ex6/App/Dockerfile

@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: agoodpwd
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

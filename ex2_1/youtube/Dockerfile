@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-WORKDIR /mydir
+ENV LC_ALL=C.UTF-8
 
 RUN apt-get update
 
@@ -10,6 +10,6 @@ RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/yout
 
 RUN chmod a+x /usr/local/bin/youtube-dl
 
-ENV LC_ALL=C.UTF-8
+WORKDIR /app
 
 ENTRYPOINT ["/usr/local/bin/youtube-dl"]

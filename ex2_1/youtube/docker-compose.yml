@@ -5,5 +5,5 @@ services:
     .
   volumes:
     - .:/mydir
-  image: dmuiruri/youtube-dl
+  image: youtube-dl
   container_name: youtube-dl
